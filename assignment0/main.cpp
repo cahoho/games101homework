@@ -1,9 +1,9 @@
 #include<cmath>
-#include<eigen3/Eigen/Core>
-#include<eigen3/Eigen/Dense>
+#include <Eigen/Core>
+#include<Eigen/Dense>
 #include<iostream>
 
-int main(){
+int TestContent(){
 
     // Basic Example of cpp
     std::cout << "Example of cpp \n";

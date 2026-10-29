@@ -1,0 +1,10 @@
+^I:\GAMES101\HOMEWORK\ASSIGNMENT0\BUILD\CMAKEFILES\5A5FA4374C9CA5FC252CC8C50E048208\GENERATE.STAMP.RULE
+setlocal
+D:\cmake\bin\cmake.exe -SI:/Games101/homework/assignment0 -BI:/Games101/homework/assignment0/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file I:/Games101/homework/assignment0/build/Transformation.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

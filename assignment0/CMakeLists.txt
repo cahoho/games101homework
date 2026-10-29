@@ -1,7 +1,6 @@
-cmake_minimum_required (VERSION 2.8.11)
-project (Transformation)
+cmake_minimum_required(VERSION 3.10)  #兼容4.x
+project(Transformation)
 
-find_package(Eigen3 REQUIRED)
-include_directories(EIGEN3_INCLUDE_DIR)
+include_directories("I:/cpplib/eigen-5.0.1")
 
-add_executable (Transformation main.cpp)
+add_executable(Transformation work.cpp)

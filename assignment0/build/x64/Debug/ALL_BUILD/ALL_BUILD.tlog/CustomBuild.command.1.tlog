@@ -1,0 +1,10 @@
+^I:\GAMES101\HOMEWORK\ASSIGNMENT0\CMAKELISTS.TXT
+setlocal
+D:\cmake\bin\cmake.exe -SI:/Games101/homework/assignment0 -BI:/Games101/homework/assignment0/build --check-stamp-file I:/Games101/homework/assignment0/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
